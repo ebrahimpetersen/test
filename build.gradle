@@ -79,5 +79,6 @@ task printVariable() {
         println System.getenv("DB_URL")
         println System.getenv("REPO_PASSWORD")
         println System.getenv("REPO_URL")
+        println "Done printing variables"
     }
 }
