@@ -27,5 +27,4 @@ jobs:
         TEST_VAR: 'test123'
         DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         REPO_PASSWORD: ${{ secrets.REPO_PASSWORD }}
-        DB_URL: ${{ DB_URL }}
       run: ./gradlew printVariable -P environmentName=stage1 -P environment=qa
