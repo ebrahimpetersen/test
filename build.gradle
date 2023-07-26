@@ -77,10 +77,10 @@ task printVariable() {
         println project.properties["db.password"]
 
         println System.getenv("TEST_VAR")
-        println System.getenv("DB_PASSWORD")
-        println System.getenv("DB_URL")
-        println System.getenv("REPO_PASSWORD")
-        println System.getenv("REPO_URL")
+        println System.getenv("DB_PASSWORD") // ***
+        println System.getenv("DB_URL") // null
+        println System.getenv("REPO_PASSWORD") // ***
+        println System.getenv("REPO_URL") // null
         println "Done printing variables"
     }
 }
