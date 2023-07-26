@@ -75,5 +75,8 @@ task printVariable() {
         println project.properties["db.url"]
         println project.properties["db.username"]
         println project.properties["db.password"]
+        println System.getenv("DB_PASSWORD")
+        println ${{ secrets.DB_PASSWORD }}
+        println ${{ DB_PASSWORD }}
     }
 }
