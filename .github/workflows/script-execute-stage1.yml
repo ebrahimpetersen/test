@@ -27,4 +27,4 @@ jobs:
         GH_USERNAME: ${{ secrets.GH_USERNAME }}
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         SF_DB_PASSWORD: ${{ secrets.SF_DB_PASSWORD }}
-      run: ./gradlew liquibaseUpdate -PenvironmentName=stage1
+      run: ./gradlew printVariable -PenvironmentName=stage1
